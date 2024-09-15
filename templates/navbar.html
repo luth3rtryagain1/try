@@ -1,0 +1,55 @@
+
+<div class="navbar">
+    <a class="title" href="/">
+        <img src="/assets/img/logo.png" loading="eager" />
+    </a>
+
+    <div class="end">
+        <a href="/"><i class="fa-solid fa-house fa-xs"></i>ראשי</a>
+        <a href="/games"><i class="fa-solid fa-gamepad-modern fa-xs"></i>משחקים</a>
+        <a href="/search"><i class="fa-solid fa-magnifying-glass fa-xs"></i>מוגי-נט</a>
+        <a href="/credits"><i class="fa-solid fa-handshake fa-xs"></i>קרדיטים</a>
+        <a href="#settings" data-link="true" data-attr="sidebar_trigger"><i class="fa-solid fa-gear fa-sm"></i>הגדרות</a>
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="scroll">
+        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+    <h1>הגדרות</h1>
+
+    <h3>כפתור מורה מגיעה</h3>
+    <input class="settings-input" type="text" name="Panic Key" id="panic_key" value="לא נבחר מקש" readonly />
+    <button class="settings-button" id="reset_panic">איפוס</button>
+    <br>
+    <h3>האתר שהכפתור יעביר אליו  (מורה מגיעה)</h3>
+    <input class="settings-input" type="url" id="panic_url" placeholder="google.com :לדוגמא" />
+    <br>
+    <h3>עיצוב האתר</h3>
+    <div id="themes">
+        <button class="settings-button">Dark</button>
+        <button class="settings-button">Light</button>
+        <button class="settings-button">Flamingo</button>
+        <button class="settings-button">Frost</button>
+        <button class="settings-button">Crimson</button>
+        <button class="settings-button">Inferno</button>
+        <button class="settings-button">Indigo</button>
+        <button class="settings-button">Violet</button>
+    </div>
+
+    <h3>הסוואה של האתר</h3>
+    <select id="cloak_select">
+        <option value="none">ללא הסוואה</option>
+        <option value="custom">הסוואה אישית</option>
+        <option value="classos">קלסוס</option>
+        <option value="google">גוגל</option>
+        <option value="classroom">גוגל קלאסרום</option>
+    </select>
+    <div class="hidden" id="custom_cloak">
+        <input class="settings-input" type="text" placeholder="Title" id="title" />
+        <input class="settings-input" type="text" placeholder="google.com :לדוגמא" id="domain" />
+    </div>
+    <br>
+    <br>
+</div>
